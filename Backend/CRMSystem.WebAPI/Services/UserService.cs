@@ -103,7 +103,7 @@ namespace CRMSystem.WebAPI.Services
             return user;
         }
 
-        public async Task UpdateUserAsync(Guid userId, string fullName, DateTime birthDate, string email,
+        public async Task UpdateUserAsync(Guid userId, string? fullName, DateTime? birthDate, string? email,
             string? oldPassword, string? newPassword, string? confirmNewPassword)
         {
             var user = await userRepository.GetUserByIdAsync(userId);

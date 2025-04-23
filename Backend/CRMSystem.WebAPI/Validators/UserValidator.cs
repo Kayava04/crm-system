@@ -98,35 +98,51 @@ namespace CRMSystem.WebAPI.Validators
         {
             errorMessage = string.Empty;
             
-            if (string.IsNullOrWhiteSpace(user.FullName) || user.FullName.Length < 3)
-            {
-                errorMessage = ValidationMessages.FullNameMustBeCorrect;
-                return false;
-            }
-
-            if (user.BirthDate == default)
-            {
-                errorMessage = ValidationMessages.BirthDateIsRequired;
-                return false;
-            }
+            var profileUpdateRequested =
+                !string.IsNullOrWhiteSpace(user.FullName) ||
+                user.BirthDate.HasValue ||
+                !string.IsNullOrWhiteSpace(user.Email);
             
-            if (user.BirthDate >= DateTime.Now)
-            {
-                errorMessage = ValidationMessages.BirthDateMustBeCorrect;
-                return false;
-            }
-
-            if (!IsValidEmail(user.Email))
-            {
-                errorMessage = ValidationMessages.EmailMustBeCorrect;
-                return false;
-            }
-
             var passwordChangeRequested =
                 !string.IsNullOrWhiteSpace(user.OldPassword) ||
                 !string.IsNullOrWhiteSpace(user.NewPassword) ||
                 !string.IsNullOrWhiteSpace(user.ConfirmNewPassword);
+            
+            if (!passwordChangeRequested && !profileUpdateRequested)
+            {
+                errorMessage = ValidationMessages.NoFieldsProvidedToUpdate;
+                return false;
+            }
 
+            // Profile Validation
+            if (profileUpdateRequested)
+            {
+                if (string.IsNullOrWhiteSpace(user.FullName) || user.FullName.Length < 3)
+                {
+                    errorMessage = ValidationMessages.FullNameMustBeCorrect;
+                    return false;
+                }
+
+                if (user.BirthDate == default)
+                {
+                    errorMessage = ValidationMessages.BirthDateIsRequired;
+                    return false;
+                }
+            
+                if (user.BirthDate >= DateTime.Now)
+                {
+                    errorMessage = ValidationMessages.BirthDateMustBeCorrect;
+                    return false;
+                }
+
+                if (!IsValidEmail(user.Email))
+                {
+                    errorMessage = ValidationMessages.EmailMustBeCorrect;
+                    return false;
+                }
+            }
+
+            // Password Validation
             if (passwordChangeRequested)
             {
                 if (string.IsNullOrWhiteSpace(user.OldPassword))

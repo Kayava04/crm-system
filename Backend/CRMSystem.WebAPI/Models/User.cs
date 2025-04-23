@@ -30,13 +30,14 @@ namespace CRMSystem.WebAPI.Models
         public static User Create(Guid id, string fullname, DateTime birthDate, string email, string username, string passwordHash, int roleId) =>
             new(id, fullname, birthDate, email, username, passwordHash, roleId);
 
-        public void Update(string fullName, DateTime birthDate, string email, string? passwordHash = null)
+        public void Update(string? fullName = null, DateTime? birthDate = null, string? email = null, string? passwordHash = null)
         {
-            FullName = fullName;
-            BirthDate = birthDate;
-            Email = email;
-            UpdatedAt = DateTime.UtcNow;
-            
+            if (!string.IsNullOrWhiteSpace(fullName))
+                FullName = fullName;
+            if (birthDate.HasValue)
+                BirthDate = birthDate.Value;
+            if (!string.IsNullOrWhiteSpace(email))
+                Email = email;
             if (!string.IsNullOrWhiteSpace(passwordHash))
                 PasswordHash = passwordHash;
         }

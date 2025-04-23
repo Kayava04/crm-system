@@ -27,6 +27,7 @@ namespace CRMSystem.WebAPI.Validators
         
         // For SignUp Dto
         public const string InvalidObjectType = "Invalid object type!";
+        public const string NoFieldsProvidedToUpdate = "No fields were provided to update!";
         public const string FullNameMustBeCorrect = "FullName must be at least 3 characters long!";
         public const string UserNameMustBeCorrect = "UserName must be at least 4 characters long!";
         public const string PasswordMustBeCorrect = "Password must be at least 6 characters long and contain at least one letter and one number!";
