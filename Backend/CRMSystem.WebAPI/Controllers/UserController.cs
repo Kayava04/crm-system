@@ -30,7 +30,7 @@ namespace CRMSystem.WebAPI.Controllers
             return Ok(userDto);
         }
 
-        [HttpPut]
+        [HttpPatch]
         [Authorize(Policy = AuthorizationPolicies.UserOrAdmin)]
         public async Task<IActionResult> UpdateMe([FromBody] UpdateUserDto updateUserDto)
         {
@@ -48,10 +48,7 @@ namespace CRMSystem.WebAPI.Controllers
                     userId,
                     updateUserDto.FullName,
                     updateUserDto.BirthDate,
-                    updateUserDto.Email,
-                    updateUserDto.OldPassword,
-                    updateUserDto.NewPassword,
-                    updateUserDto.ConfirmNewPassword);
+                    updateUserDto.Email);
 
                 logger.LogInformation($"User '{userId}' successfully updated profile.");
                 return Ok();
@@ -59,6 +56,36 @@ namespace CRMSystem.WebAPI.Controllers
             catch (InvalidOperationException ex)
             {
                 logger.LogError($"Error while updating profile for user '{userId}'. Message: {ex.Message}");
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPatch("change-password")]
+        [Authorize(Policy = AuthorizationPolicies.UserOrAdmin)]
+        public async Task<IActionResult> ChangePassword([FromBody] UpdateUserPasswordDto updateUserPasswordDto)
+        {
+            var userId = Guid.Parse(User.FindFirst("userId")!.Value);
+
+            if (!validatorFactory.Validate(updateUserPasswordDto, out var errorMessage))
+            {
+                logger.LogWarning($"Update password validation failed for user '{userId}'. Message: {errorMessage}");
+                return BadRequest(errorMessage);
+            }
+            
+            try
+            {
+                await service.UpdateUserPasswordAsync(
+                    userId,
+                    updateUserPasswordDto.OldPassword,
+                    updateUserPasswordDto.NewPassword,
+                    updateUserPasswordDto.ConfirmNewPassword);
+                
+                logger.LogInformation($"User '{userId}' successfully changed password.");
+                return Ok();
+            }
+            catch (InvalidOperationException ex)
+            {
+                logger.LogError($"Error while changing password for user '{userId}'. Message: {ex.Message}");
                 return BadRequest(ex.Message);
             }
         }

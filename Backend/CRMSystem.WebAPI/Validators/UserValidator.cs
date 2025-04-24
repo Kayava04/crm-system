@@ -20,6 +20,8 @@ namespace CRMSystem.WebAPI.Validators
                     return ValidateSignIn(signIn, out errorMessage);
                 case UpdateUserDto updateUser:
                     return ValidateUpdating(updateUser, out errorMessage);
+                case UpdateUserPasswordDto updateUserPassword:
+                    return ValidateUpdatingPassword(updateUserPassword, out errorMessage);
                 default:
                     errorMessage = ValidationMessages.InvalidObjectType;
                     return false;
@@ -103,12 +105,7 @@ namespace CRMSystem.WebAPI.Validators
                 user.BirthDate.HasValue ||
                 !string.IsNullOrWhiteSpace(user.Email);
             
-            var passwordChangeRequested =
-                !string.IsNullOrWhiteSpace(user.OldPassword) ||
-                !string.IsNullOrWhiteSpace(user.NewPassword) ||
-                !string.IsNullOrWhiteSpace(user.ConfirmNewPassword);
-            
-            if (!passwordChangeRequested && !profileUpdateRequested)
+            if (!profileUpdateRequested)
             {
                 errorMessage = ValidationMessages.NoFieldsProvidedToUpdate;
                 return false;
@@ -141,23 +138,41 @@ namespace CRMSystem.WebAPI.Validators
                     return false;
                 }
             }
+            
+            return true;
+        }
 
+        private bool ValidateUpdatingPassword(UpdateUserPasswordDto password, out string errorMessage)
+        {
+            errorMessage = string.Empty;
+            
+            var passwordChangeRequested =
+                !string.IsNullOrWhiteSpace(password.OldPassword) ||
+                !string.IsNullOrWhiteSpace(password.NewPassword) ||
+                !string.IsNullOrWhiteSpace(password.ConfirmNewPassword);
+            
+            if (!passwordChangeRequested)
+            {
+                errorMessage = ValidationMessages.NoFieldsProvidedToUpdate;
+                return false;
+            }
+            
             // Password Validation
             if (passwordChangeRequested)
             {
-                if (string.IsNullOrWhiteSpace(user.OldPassword))
+                if (string.IsNullOrWhiteSpace(password.OldPassword))
                 {
                     errorMessage = ValidationMessages.OldPasswordIsRequired;
                     return false;
                 }
 
-                if (string.IsNullOrWhiteSpace(user.NewPassword) || user.NewPassword.Length < 6)
+                if (string.IsNullOrWhiteSpace(password.NewPassword) || password.NewPassword.Length < 6)
                 {
                     errorMessage = ValidationMessages.PasswordMustBeCorrect;
                     return false;
                 }
 
-                if (user.NewPassword != user.ConfirmNewPassword)
+                if (password.NewPassword != password.ConfirmNewPassword)
                 {
                     errorMessage = ValidationMessages.PasswordsDoNotMatch;
                     return false;

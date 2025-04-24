@@ -1,6 +1,6 @@
 using CRMSystem.WebAPI.Auth;
 using CRMSystem.WebAPI.DTOs.Photo;
-using CRMSystem.WebAPI.Services;
+using CRMSystem.WebAPI.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +9,7 @@ namespace CRMSystem.WebAPI.Controllers
     [ApiController]
     [Route("api/users")]
     public class UploadController(
-        UserService service,
+        IUploadService service,
         ILogger<UploadController> logger) : ControllerBase
     {
         [HttpPost("upload-photo")]

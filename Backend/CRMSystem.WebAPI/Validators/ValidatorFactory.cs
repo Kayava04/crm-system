@@ -17,6 +17,7 @@ namespace CRMSystem.WebAPI.Validators
                 SignUpRequestDto  => new UserValidator(),
                 SignInRequestDto => new UserValidator(),
                 UpdateUserDto => new UserValidator(),
+                UpdateUserPasswordDto => new UserValidator(),
                 _ => throw new ArgumentException($"Validator for type '{type}' not found.")
             };
         }

@@ -42,6 +42,8 @@ namespace CRMSystem.WebAPI.Extensions
             services.AddScoped<StudentGroupService>();
             services.AddScoped<StudentService>();
             services.AddScoped<UserService>();
+            services.AddScoped<IUploadService, UploadService>();
+            services.AddScoped<IFileStorageService, LocalFileStorageService>();
             services.AddScoped<StudentRegistrationService>();
             services.AddScoped<EmployeeRegistrationService>();
             services.AddScoped<EmailService>();
