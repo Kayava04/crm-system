@@ -11,6 +11,12 @@ namespace CRMSystem.WebAPI.Services
     {
         public async Task SignUp(string fullname, DateTime birthDate, string email, string username, string password)
         {
+            if (await userRepository.EmailExistsAsync(email))
+                throw new InvalidOperationException("This email is already in use.");
+
+            if (await userRepository.UsernameExistsAsync(username))
+                throw new InvalidOperationException("A user with this username already exists.");
+            
             var hashedPassword = passwordHasher.Generate(password);
 
             var isFirstUser = await userRepository.IsEmptyAsync();
@@ -49,6 +55,13 @@ namespace CRMSystem.WebAPI.Services
             
             if (user == null)
                 throw new InvalidOperationException("User not found");
+            
+            if (!string.IsNullOrWhiteSpace(email) &&
+                !email.Equals(user.Email, StringComparison.OrdinalIgnoreCase) &&
+                await userRepository.EmailExistsAsync(email))
+            {
+                throw new InvalidOperationException("A user with this email already exists.");
+            }
             
             user.Update(fullName, birthDate, email);
             user.TouchUpdatedAt();

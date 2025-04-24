@@ -22,11 +22,19 @@ namespace CRMSystem.WebAPI.Controllers
                 logger.LogWarning($"SignUp validation failed: {errorMessage}");
                 return BadRequest(errorMessage);
             }
+
+            try
+            {
+                await userService.SignUp(request.FullName, request.BirthDate, request.Email, request.Username, request.Password);
             
-            await userService.SignUp(request.FullName, request.BirthDate, request.Email, request.Username, request.Password);
-            
-            logger.LogInformation($"User '{request.Username}' successfully signed up.");
-            return Ok();
+                logger.LogInformation($"User '{request.Username}' successfully signed up.");
+                return Ok();
+            }
+            catch (InvalidOperationException ex)
+            {
+                logger.LogError($"Sign-up failed for user '{request.Username}': {ex.Message}");
+                return BadRequest(ex.Message);
+            }
         }
     
         [HttpPost("sign-in")]
@@ -34,7 +42,7 @@ namespace CRMSystem.WebAPI.Controllers
         {
             if (!validatorFactory.Validate(request, out var errorMessage))
             {
-                logger.LogWarning($"SignIn validation failed: {errorMessage}");
+                logger.LogWarning($"Sign-in validation failed: {errorMessage}");
                 return BadRequest(errorMessage);
             }
             

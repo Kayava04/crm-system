@@ -46,6 +46,16 @@ namespace CRMSystem.WebAPI.Repositories
             return mapper.Map<User>(userEntity);
         }
 
+        public async Task<bool> EmailExistsAsync(string email)
+        {
+            return await context.Users.AnyAsync(u => u.Email == email);
+        }
+
+        public async Task<bool> UsernameExistsAsync(string username)
+        {
+            return await context.Users.AnyAsync(u => u.Username == username);
+        }
+        
         public async Task UpdateAsync(User user)
         {
             var existingEntity = await context.Users

@@ -7,6 +7,8 @@ namespace CRMSystem.WebAPI.Interfaces
         Task AddAsync(User user);
         Task<User?> GetUserByIdAsync(Guid userId);
         Task<User> GetByUsernameAsync(string username);
+        Task<bool> UsernameExistsAsync(string username);
+        Task<bool> EmailExistsAsync(string email);
         Task UpdateAsync(User user);
         Task<bool> IsEmptyAsync();
     }
