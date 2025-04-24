@@ -28,7 +28,16 @@ namespace CRMSystem.WebAPI.Services
             client.EnableSsl = true;
 
             var mailMessage = new MailMessage(_emailCredentials.Email, savedMessage.Email, dto.Subject, dto.Body);
-            await client.SendMailAsync(mailMessage);
+
+            try
+            {
+                await client.SendMailAsync(mailMessage);
+            }
+            catch (SmtpException ex)
+            {
+                throw new InvalidOperationException(
+                    $"SMTP error: {ex.Message} (Host: {_smtpSettings.Host}, Port: {_smtpSettings.Port})", ex);
+            }
 
             return mapper.Map<MessageDto>(savedMessage);
         }
