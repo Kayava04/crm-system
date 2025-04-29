@@ -32,23 +32,21 @@ namespace CRMSystem.WebAPI.Repositories
             if (filter != null)
             {
                 if (!string.IsNullOrWhiteSpace(employeeFilter.FullName))
-                    query = query.Where(e => e.Person.FullName
-                        .Contains(employeeFilter.FullName));
+                    query = query.Where(e => e.Person.FullName.ToLower().Contains(employeeFilter.FullName.ToLower()));
 
                 if (employeeFilter.BirthDate.HasValue)
                     query = query.Where(e => e.Person.BirthDate.Date == employeeFilter.BirthDate.Value.Date);
 
                 if (!string.IsNullOrWhiteSpace(employeeFilter.Phone))
                     query = query.Where(e => e.Person.Contacts
-                        .Any(c => c.Phone == employeeFilter.Phone));
+                        .Any(c => c.Phone.ToLower().Contains(employeeFilter.Phone.ToLower())));
 
                 if (!string.IsNullOrWhiteSpace(employeeFilter.Email))
                     query = query.Where(e => e.Person.Contacts
-                        .Any(c => c.Email == employeeFilter.Email));
+                        .Any(c => c.Email.ToLower().Contains(employeeFilter.Email.ToLower())));
 
                 if (!string.IsNullOrWhiteSpace(employeeFilter.Position))
-                    query = query.Where(e => e.Position
-                        .Contains(employeeFilter.Position));
+                    query = query.Where(e => e.Position.ToLower().Contains(employeeFilter.Position.ToLower()));
                 
                 if (employeeFilter.MinSalary.HasValue)
                     query = query.Where(e => e.Salary >= employeeFilter.MinSalary.Value);

@@ -1,0 +1,900 @@
+[16:59:14 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[16:59:14 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[16:59:14 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[16:59:20 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[16:59:20 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[16:59:53 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[16:59:53 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:01:47 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[17:01:47 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:01:47 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:01:49 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:01:49 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:01:54 INF] CRMSystem.WebAPI.Controllers.UserController: User 'f9015b1f-577e-4ac0-96d3-118fce5c9e56' successfully updated profile.
+[17:01:54 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:01:54 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:02:00 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:02:00 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:02:08 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:02:08 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:02:10 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:02:10 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:02:14 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:02:14 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:04:34 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Invalid username or password
+   at CRMSystem.WebAPI.Services.UserService.SignIn(String username, String password) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 36
+   at CRMSystem.WebAPI.Controllers.AuthController.SignIn(SignInRequestDto request) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\AuthController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:04:36 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:04:36 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:04:36 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:06:40 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:06:41 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:06:41 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:09:10 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:09:10 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:09:10 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:09:38 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:09:38 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:09:38 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:12:40 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:12:40 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:12:40 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:15:49 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[17:15:49 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[17:15:49 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[17:18:14 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:18:14 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:18:14 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:20:46 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:20:46 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:20:46 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:21:05 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:21:05 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:21:05 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:25:52 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:25:52 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:25:52 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:27:05 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Invalid username or password
+   at CRMSystem.WebAPI.Services.UserService.SignIn(String username, String password) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 36
+   at CRMSystem.WebAPI.Controllers.AuthController.SignIn(SignInRequestDto request) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\AuthController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:27:10 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:27:11 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:27:11 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:29:57 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:29:57 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:29:57 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:30:57 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:30:57 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:30:57 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:33:35 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:33:35 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:33:35 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:34:32 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:34:32 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:34:32 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:35:06 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:35:06 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:35:06 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:43:53 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Invalid username or password
+   at CRMSystem.WebAPI.Services.UserService.SignIn(String username, String password) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 36
+   at CRMSystem.WebAPI.Controllers.AuthController.SignIn(SignInRequestDto request) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\AuthController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[17:43:57 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:43:57 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:43:57 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:44:19 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:44:19 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:44:19 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:45:19 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:45:19 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:45:19 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:47:00 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:47:00 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:47:00 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:51:23 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:51:23 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:51:23 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[17:54:07 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[17:54:07 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[17:54:07 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[20:00:14 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[20:00:14 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:00:14 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:02:20 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:02:20 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:03:37 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:03:37 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:03:42 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:03:42 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:03:46 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:03:46 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:03:50 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:03:50 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:03:54 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:03:54 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:03:56 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:03:56 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:03:59 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:03:59 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:04:37 INF] CRMSystem.WebAPI.Controllers.UserController: User 'f9015b1f-577e-4ac0-96d3-118fce5c9e56' successfully updated profile.
+[20:04:37 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:04:37 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:04:43 INF] CRMSystem.WebAPI.Controllers.UserController: User 'f9015b1f-577e-4ac0-96d3-118fce5c9e56' successfully updated profile.
+[20:04:43 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:04:43 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:04:51 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:04:51 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[20:04:53 INF] CRMSystem.WebAPI.Controllers.UploadController: User 'f9015b1f-577e-4ac0-96d3-118fce5c9e56' is attempting to upload a photo.
+[20:04:53 INF] CRMSystem.WebAPI.Controllers.UploadController: User 'f9015b1f-577e-4ac0-96d3-118fce5c9e56' uploaded a photo successfully. Image URL: https://localhost:7200/uploads/9f216ca82b32bbda1824876130dd745bf80dbc299035c6408d61cfce03ccfaca.jpg.
+[20:06:38 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[20:06:38 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[21:34:37 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[21:34:37 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[21:34:37 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[21:34:39 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[21:34:39 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[21:35:07 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[21:35:07 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[21:35:35 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[21:35:35 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[21:35:39 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[21:35:39 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:11:51 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:11:51 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:11:51 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:11:53 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:11:53 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:21:03 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:21:03 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:21:03 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:21:05 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:21:05 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:21:39 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:21:39 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:21:39 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:21:41 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:21:41 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:22:21 ERR] Microsoft.EntityFrameworkCore.Database.Command: Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Persons" ("Id", "BirthDate", "FullName")
+VALUES (@p0, @p1, @p2);
+[22:22:21 ERR] Microsoft.EntityFrameworkCore.Update: An exception occurred in the database while saving changes for context type 'CRMSystem.WebAPI.Core.SchoolDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[22:22:21 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CRMSystem.WebAPI.Repositories.PersonRepository.AddAsync(Person person) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Repositories\PersonRepository.cs:line 36
+   at CRMSystem.WebAPI.Services.EmployeeRegistrationService.CreateEmployeeAsync(RegisterEmployeeDto dto) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\EmployeeRegistrationService.cs:line 17
+   at CRMSystem.WebAPI.Controllers.EmployeeRegistrationController.Create(RegisterEmployeeDto employeeDto) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\EmployeeRegistrationController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:27:33 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:27:33 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:27:33 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:27:34 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:27:34 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:27:39 ERR] Microsoft.EntityFrameworkCore.Database.Command: Failed executing DbCommand (0ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "BirthDate" = @p0, "UpdatedAt" = @p1
+WHERE "Id" = @p2;
+[22:27:39 ERR] Microsoft.EntityFrameworkCore.Update: An exception occurred in the database while saving changes for context type 'CRMSystem.WebAPI.Core.SchoolDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[22:27:39 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CRMSystem.WebAPI.Repositories.UserRepository.UpdateAsync(User user) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Repositories\UserRepository.cs:line 68
+   at CRMSystem.WebAPI.Services.UserService.UpdateUserAsync(Guid userId, String fullName, Nullable`1 birthDate, String email) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 69
+   at CRMSystem.WebAPI.Controllers.UserController.UpdateMe(UpdateUserDto updateUserDto) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\UserController.cs:line 47
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:34:20 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:34:20 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:34:20 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:34:22 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:34:22 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:35:06 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:35:06 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:35:06 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:35:07 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:35:07 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:42:25 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:42:26 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:42:26 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:42:27 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:42:27 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:43:03 ERR] Microsoft.EntityFrameworkCore.Database.Command: Failed executing DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Persons" ("Id", "BirthDate", "FullName")
+VALUES (@p0, @p1, @p2);
+[22:43:03 ERR] Microsoft.EntityFrameworkCore.Update: An exception occurred in the database while saving changes for context type 'CRMSystem.WebAPI.Core.SchoolDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[22:43:03 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgResolverTypeInfo.GetResolutionAsObject(Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgTypeInfo.GetObjectResolution(Object value)
+   at Npgsql.NpgsqlParameter.ResolveConverter(PgTypeInfo typeInfo)
+   at Npgsql.NpgsqlParameter.ResolveTypeInfo(PgSerializerOptions options)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CRMSystem.WebAPI.Repositories.PersonRepository.AddAsync(Person person) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Repositories\PersonRepository.cs:line 36
+   at CRMSystem.WebAPI.Services.EmployeeRegistrationService.CreateEmployeeAsync(RegisterEmployeeDto dto) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\EmployeeRegistrationService.cs:line 17
+   at CRMSystem.WebAPI.Controllers.EmployeeRegistrationController.Create(RegisterEmployeeDto employeeDto) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\EmployeeRegistrationController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:44:43 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:44:43 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:44:43 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:44:44 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:44:44 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:45:12 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: e937a34c-f2a4-4787-a755-7ce7afbbfd9c, added successfully.
+[22:45:13 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 5.
+[22:45:38 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data exported successfully to EMPLOYEESEXPORT.CSV file.
+[22:45:57 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 5 employees from file: EmployeesExport.csv
+[22:45:57 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.CSV file. Total count: 5
+[22:46:01 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:01 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:01 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:01 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:02 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:02 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:03 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:03 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:04 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:04 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:06 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:06 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:07 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:07 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:08 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:08 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:08 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:46:08 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:46:17 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 5 employees from file: EmployeesExport.csv
+[22:46:17 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.CSV file. Total count: 5
+[22:49:41 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:49:41 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:49:41 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:49:42 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:49:42 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:49:44 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:49:44 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:49:52 ERR] Microsoft.EntityFrameworkCore.Database.Command: Failed executing DbCommand (0ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "BirthDate" = @p0, "UpdatedAt" = @p1
+WHERE "Id" = @p2;
+[22:49:52 ERR] Microsoft.EntityFrameworkCore.Update: An exception occurred in the database while saving changes for context type 'CRMSystem.WebAPI.Core.SchoolDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+[22:49:52 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> System.ArgumentException: Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array, range, or multirange. (Parameter 'value')
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(DateTime value, Nullable`1 expectedPgTypeId, Boolean validateOnly)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver.<>c.<CreateResolver>b__0_0(DateTimeConverterResolver`1 resolver, DateTime value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.Converters.DateTimeConverterResolver`1.Get(T value, Nullable`1 expectedPgTypeId)
+   at Npgsql.Internal.PgConverterResolver`1.GetAsObjectInternal(PgTypeInfo typeInfo, Object value, Nullable`1 expectedPgTypeId)
+   at Npgsql.NpgsqlParameterCollection.ProcessParameters(PgSerializerOptions options, Boolean validateValues, CommandType commandType)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CRMSystem.WebAPI.Repositories.UserRepository.UpdateAsync(User user) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Repositories\UserRepository.cs:line 68
+   at CRMSystem.WebAPI.Services.UserService.UpdateUserAsync(Guid userId, String fullName, Nullable`1 birthDate, String email) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 69
+   at CRMSystem.WebAPI.Controllers.UserController.UpdateMe(UpdateUserDto updateUserDto) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\UserController.cs:line 47
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:55:42 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[22:55:42 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:55:42 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:55:43 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:55:43 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:55:49 INF] CRMSystem.WebAPI.Controllers.UserController: User '3601ee4e-e2f8-438c-b0ed-576f3ce940f7' successfully updated profile.
+[22:55:49 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:55:49 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:55:53 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:55:53 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:55:56 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[22:55:56 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[22:55:58 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' signed out.
+[22:56:42 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.WebAPI.Services.UserService.SignIn(String username, String password) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 33
+   at CRMSystem.WebAPI.Controllers.AuthController.SignIn(SignInRequestDto request) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\AuthController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:56:48 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.WebAPI.Services.UserService.SignIn(String username, String password) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 33
+   at CRMSystem.WebAPI.Controllers.AuthController.SignIn(SignInRequestDto request) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\AuthController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:57:27 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.WebAPI.Services.UserService.SignIn(String username, String password) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 33
+   at CRMSystem.WebAPI.Controllers.AuthController.SignIn(SignInRequestDto request) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\AuthController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:57:46 ERR] Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware: An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CRMSystem.WebAPI.Services.UserService.SignIn(String username, String password) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Services\UserService.cs:line 33
+   at CRMSystem.WebAPI.Controllers.AuthController.SignIn(SignInRequestDto request) in D:\Projects\C#\CRMSystem\Backend\CRMSystem.WebAPI\Controllers\AuthController.cs:line 49
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+[22:58:52 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'test_user3' successfully signed up.
+[22:59:02 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'test_user3' successfully signed in.
+[22:59:02 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'a5a48df1-5602-4376-9b10-ea601c07382f'.
+[22:59:02 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'test_user3'.
+[22:59:03 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'a5a48df1-5602-4376-9b10-ea601c07382f'.
+[22:59:03 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'test_user3'.
+[22:59:16 INF] CRMSystem.WebAPI.Controllers.UserController: User 'a5a48df1-5602-4376-9b10-ea601c07382f' successfully updated profile.
+[22:59:16 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'a5a48df1-5602-4376-9b10-ea601c07382f'.
+[22:59:16 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'test_user3'.
+[23:03:35 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:03:35 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:03:35 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:03:36 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:03:36 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:04:18 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 828b7893-ff8e-4b11-b8a5-0f332c5fbf75, added successfully.
+[23:04:19 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 16.
+[23:07:39 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:07:39 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:07:39 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:07:40 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:07:40 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:08:21 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data exported successfully to EMPLOYEESEXPORT.XLSX file.
+[23:11:36 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:11:36 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:11:36 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:11:37 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:11:37 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:11:37 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 16.
+[23:11:54 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 09787972-c201-4f9a-930d-ba0c94711edc deleted successfully.
+[23:11:55 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 15.
+[23:12:00 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 16c5686e-5a5d-481b-8c36-f036f22cb40b deleted successfully.
+[23:12:01 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 14.
+[23:12:09 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: b6d7cc8b-7cfc-409a-a0ab-b6f9d62e7fc9 deleted successfully.
+[23:12:10 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 13.
+[23:14:32 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:14:32 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:14:32 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:14:34 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:14:34 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:14:34 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 13.
+[23:14:38 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 25ce202f-bec9-44dd-bccc-4fab48b9b74d deleted successfully.
+[23:14:38 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 310182d8-f712-4330-970e-64f095e7e908 deleted successfully.
+[23:14:38 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 49d3036f-b82f-4b56-8f3f-25b5fdc4950b deleted successfully.
+[23:14:39 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 10.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: e937a34c-f2a4-4787-a755-7ce7afbbfd9c deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: e32979ad-0405-4fe5-b288-137954f071dc deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: b6a53bac-2b6c-4e98-82b9-48ad0f92345c deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 91f81c21-366d-4b37-9c03-144d3be4cab9 deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 8b7fe596-325b-431c-aa7e-22f8f94ac587 deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 8f91a8d8-6fb2-47a7-8b41-b6807d5541c4 deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 8761bbd8-075c-42ea-91a4-65801fc8eccc deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 828b7893-ff8e-4b11-b8a5-0f332c5fbf75 deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 78006ae1-eee1-4056-b728-11932a3183d9 deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 682a00ef-8641-4354-98a7-9cb6752f1687 deleted successfully.
+[23:14:49 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 0.
+[23:14:51 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:14:51 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 0.
+[23:14:51 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:14:52 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:14:52 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:14:52 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:14:52 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 0.
+[23:14:52 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:14:53 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:14:53 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:14:54 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:14:54 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 0.
+[23:14:54 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:15:57 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: e0883ffc-addc-4e91-bf72-26df11825840, added successfully.
+[23:15:57 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 1.
+[23:18:51 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:18:51 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:18:51 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:19:04 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:19:04 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:19:04 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:19:05 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 1.
+[23:19:05 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:19:05 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:19:15 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data exported successfully to EMPLOYEESEXPORT.XLSX file.
+[23:19:23 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 1 employees from file: EmployeesExport.xlsx
+[23:19:23 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.XLSX file. Total count: 1
+[23:19:25 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:19:25 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:19:26 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:19:26 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 2.
+[23:19:26 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:20:54 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:20:54 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:20:54 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:20:56 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 2.
+[23:20:56 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:20:56 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:21:24 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 1 employees from file: EmployeesExport.xlsx
+[23:21:24 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.XLSX file. Total count: 1
+[23:21:26 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 3.
+[23:24:15 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:24:15 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:24:15 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:24:16 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:24:16 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 3.
+[23:24:16 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:24:20 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 1 employees from file: EmployeesExport.xlsx
+[23:24:20 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.XLSX file. Total count: 1
+[23:24:21 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 4.
+[23:24:35 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 1 employees from file: EmployeesExport.xlsx
+[23:24:35 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.XLSX file. Total count: 1
+[23:24:37 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 5.
+[23:24:44 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data exported successfully to EMPLOYEESEXPORT.CSV file.
+[23:24:52 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data exported successfully to EMPLOYEESEXPORT.JSON file.
+[23:25:03 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 5 employees from file: EmployeesExport.json
+[23:25:03 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.JSON file. Total count: 5
+[23:25:06 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 10.
+[23:25:21 INF] CRMSystem.WebAPI.Services.EmployeeFileService: Imported 5 employees from file: EmployeesExport.csv
+[23:25:21 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee data imported successfully from EMPLOYEESEXPORT.CSV file. Total count: 5
+[23:25:22 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 15.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 0c52a50e-f897-4971-9562-b582dca8f288 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 3f11d29b-bf74-4ecf-833c-8c5e04ba8b88 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 5faf9411-9d40-41f9-be42-27fa0aaa1dd8 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 5fe6154d-ea2f-4aec-a963-7bafd59549f2 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 71348d53-a431-475d-92cf-101c175f4d25 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 7872e478-45e5-4213-9988-d949f0f0c3e1 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 8dec21b3-56bf-4c45-a592-4822ad4b2018 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 936a65f5-9c6b-4d2b-8e09-1ae60eabdbd8 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: 9fd1e8d9-b623-43a5-837a-ca8e7a29c05d deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: bd247bd0-ca7e-4b60-9a27-e4a45300e889 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: bf655abc-8ae1-494c-8f96-5c5ef4a9536b deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: e0883ffc-addc-4e91-bf72-26df11825840 deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: e2afa771-b245-4ab2-8965-919ed192c29d deleted successfully.
+[23:25:30 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: e54ea9e4-997f-4986-9199-73448ce51a1b deleted successfully.
+[23:25:31 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 1.
+[23:25:33 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:25:33 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:25:34 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 1.
+[23:25:34 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:25:34 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:25:45 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:25:45 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:27:29 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[23:27:29 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:27:29 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:27:31 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 1.
+[23:27:31 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[23:27:31 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[23:27:51 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Employee with ID: f2fac622-299a-4ca2-bcc6-9210f25856b3 updated successfully.
+[23:27:52 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 1.
+[23:28:50 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[23:28:50 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[23:28:50 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[23:28:51 INF] CRMSystem.WebAPI.Controllers.EmployeeRegistrationController: Retrieved all Employees: 1.
+[23:28:51 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[23:28:51 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.

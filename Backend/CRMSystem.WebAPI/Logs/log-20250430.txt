@@ -1,0 +1,88 @@
+[00:06:06 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:06:06 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:06:06 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:06:06 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:06:06 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:06:26 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:06:26 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:06:26 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:06:26 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:06:26 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:09:13 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:09:13 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:09:13 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:09:48 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:09:48 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:09:48 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:09:48 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:09:48 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:10:11 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:10:11 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:10:11 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:10:19 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[00:10:19 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Generating finance summary...
+[00:10:19 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Finance summary report generated successfully: CRMSystem.WebAPI.DTOs.FinanceReport.TotalSchoolIncomeReportDto.
+[00:10:19 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[00:10:19 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[00:14:35 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:14:35 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:14:35 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:16:07 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[00:16:07 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Generating finance summary...
+[00:16:07 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Finance summary report generated successfully: CRMSystem.WebAPI.DTOs.FinanceReport.TotalSchoolIncomeReportDto.
+[00:16:07 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[00:16:07 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[00:16:08 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[00:16:08 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[00:16:09 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' signed out.
+[00:16:16 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:16:16 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:16:16 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:20:47 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:20:47 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:20:47 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:21:26 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:21:26 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:21:26 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:21:39 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:21:39 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:21:39 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:21:51 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[00:21:51 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Generating finance summary...
+[00:21:51 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Finance summary report generated successfully: CRMSystem.WebAPI.DTOs.FinanceReport.TotalSchoolIncomeReportDto.
+[00:21:51 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[00:21:51 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[00:21:52 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[00:21:52 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[00:22:17 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:22:17 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:22:17 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:24:48 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:24:48 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:24:48 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:33:05 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' signed out.
+[00:33:26 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:35:55 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:35:55 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:35:55 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:44:16 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:44:16 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:44:16 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:44:16 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:44:16 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:49:20 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:49:20 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:49:20 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:50:06 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:50:14 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:50:14 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:52:31 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'bodya_mysko' successfully signed in.
+[00:53:00 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID 'f9015b1f-577e-4ac0-96d3-118fce5c9e56'.
+[00:53:00 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'bodya_mysko'.
+[00:57:03 INF] CRMSystem.WebAPI.Controllers.AuthController: User 'admin' successfully signed in.
+[00:57:03 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Generating finance summary...
+[00:57:03 INF] CRMSystem.WebAPI.Controllers.FinanceReportController: Finance summary report generated successfully: CRMSystem.WebAPI.DTOs.FinanceReport.TotalSchoolIncomeReportDto.
+[00:57:03 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[00:57:03 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
+[00:57:05 INF] CRMSystem.WebAPI.Controllers.UserController: Fetching profile for user with ID '3601ee4e-e2f8-438c-b0ed-576f3ce940f7'.
+[00:57:05 INF] CRMSystem.WebAPI.Controllers.UserController: Successfully fetched profile for user 'admin'.
