@@ -5,3 +5,11 @@
 
 /Backend/CRMSystem.WebAPI/bin
 /Backend/CRMSystem.WebAPI/obj
+
+
+
+/Frontend/.vs
+/Frontend/.idea
+
+/Frontend/CRMSystemApp/bin
+/Frontend/CRMSystemApp/obj
