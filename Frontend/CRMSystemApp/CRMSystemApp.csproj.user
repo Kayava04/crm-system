@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Page Update="Styles\ButtonStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ComboBoxStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\DataGridStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\DatePickerStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\PasswordBoxStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ScrollViewerStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextBlockStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextBoxStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ToolTipStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\LightTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AboutView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AccountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AccountWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CalendarView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ChangePasswordView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CreateEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DetailsCardWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EmailDetailsCardView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EmailView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EmployeeCreateEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EmployeeDetailsCardView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EmployeesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ReportsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SalaryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ScheduleView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StudentCreateEditView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StudentDetailsCardView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StudentsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TaskManagerView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

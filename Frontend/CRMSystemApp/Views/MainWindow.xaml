@@ -1,0 +1,232 @@
+﻿<Window x:Class="CRMSystemApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRMSystemApp.Views"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+
+    <!--// Fade-in Effect \\-->
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard>
+                    <DoubleAnimation
+                        Storyboard.TargetProperty="Opacity"
+                        From="0" To="1" Duration="0:0:0.3"/>
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <!--// Main Window \\-->
+    <Border x:Name="MainWindowBorder"
+        CornerRadius="20,20,20,25"
+        Background="{DynamicResource MainBackgroundBrush}"
+        BorderThickness="0">
+
+        <!--#D9E4D7 - Light Theme-->
+        <!--#BCCFBE - Light Theme Account Window-->
+        <!--#064D1E - Light Theme Account Window BorderBrush & Buttons-->
+        <!--#1B6132 - Light Theme Buttons Background-->
+        <!--#22783E - Light Theme Buttons IsMouseOver & Separate LineProgram-->
+        <!--#043013 - Light Theme SideBar Background-->
+
+        <!--#313431 - Dark Theme-->
+        <!--#4B504B - Dark Theme Account Window-->
+        <!--#042F12 - Dark Theme Account Window BorderBrush & Buttons-->
+        <!--#011207 - Dark Theme SideBar Background-->
+        <!--#043013 - Dark Theme Buttons Background-->
+        <!--#4B504B - Dark Theme Separate LineProgram-->
+        <!--#22783E - Light Theme Buttons IsMouseOver-->
+
+        <Grid>
+
+            <!--// Main Window Markup \\-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--// Top Bar Section \\-->
+            <Border
+                Grid.Row="0"
+                Background="{DynamicResource TopBarBackgroundBrush}"
+                MouseDown="TopPanelWindow_MouseDown">
+
+                <Grid>
+
+                    <StackPanel
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center">
+
+                        <TextBlock
+                            Style="{StaticResource LogoTextBlockStyle}"/>
+
+                    </StackPanel>
+
+                    <StackPanel
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+
+                        <!--// Minimize App \\-->
+                        <Button
+                            Style="{StaticResource MinimizeStyle}"
+                            Click="MinimizeWindow_Click"/>
+
+                        <!--// Fullscreen App \\-->
+                        <Button
+                            Style="{StaticResource FullscreenStyle}"
+                            Click="MaximizeWindow_Click"/>
+
+                        <!--// Close App \\-->
+                        <Button x:Name="CloseButton"
+                            Style="{StaticResource CloseStyle}"
+                            Click="CloseWindow_Click"/>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </Border>
+
+            <!--// Functional Bar Section \\-->
+            <Grid
+                Grid.Row="1">
+
+                <!--// Functional Bar Section Markup \\-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!--// Home Button \\-->
+                <StackPanel
+                    Grid.Column="0"
+                    HorizontalAlignment="Left"
+                    Orientation="Horizontal">
+
+                    <Button
+                        Style="{StaticResource HomeStyle}"
+                        Click="OpenHomeView_Click"/>
+
+                </StackPanel>
+
+                <!--// Search \\-->
+                <TextBox
+                    Grid.Column="1"
+                    Style="{StaticResource SearchInputStyle}"/>
+
+                <!--// App Control Panel \\-->
+                <StackPanel
+                    Grid.Column="2"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+
+                    <!--// Switch Theme \\-->
+                    <ToggleButton x:Name="ThemeToggleButton"
+                        Style="{StaticResource SwitchThemeStyle}"
+                        Checked="SwitchThemeToggleButton_Checked"
+                        Unchecked="SwitchThemeToggleButton_Unchecked"/>
+
+                    <!--// App Settings \\-->
+                    <Button
+                        Style="{StaticResource SettingsStyle}"/>
+
+                    <!--// Account \\-->
+                    <Button
+                        Style="{StaticResource AccountStyle}"
+                        Click="OpenProfile_Click"/>
+
+                </StackPanel>
+
+            </Grid>
+
+            <!--// Main Bar Section \\-->
+            <Grid
+                Grid.Row="2">
+
+                <!--// Main Bar Section Markup \\-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--// Tab Buttons \\-->
+                <Border x:Name="TabButtonsBorder"
+                    Width="75"
+                    Grid.Column="0"
+                    CornerRadius="0,0,0,20"
+                    Background="{DynamicResource MenuBackgroundBrush}"
+                    BorderThickness="0,1,0,0"
+                    BorderBrush="{DynamicResource BorderBrushColor}">
+
+                    <!--// Menu Buttons \\-->
+                    <StackPanel>
+
+                        <Button
+                            Style="{StaticResource StudentsStyle}"
+                            Click="OpenStudentsView_Click"/>
+
+                        <Button
+                            Style="{StaticResource EmployeesStyle}"
+                            Click="OpenEmployeesView_Click"/>
+
+                        <Button
+                            Style="{StaticResource ScheduleStyle}"
+                            Click="OpenScheduleView_Click"/>
+
+                        <Button
+                            Style="{StaticResource EmailStyle}"
+                            Click="OpenEmailView_Click"/>
+
+                        <Button
+                            Style="{StaticResource ReportsStyle}"
+                            Click="OpenReportsView_Click"/>
+
+                        <Button
+                            Style="{StaticResource SalaryStyle}"
+                            Click="OpenSalaryView_Click"/>
+
+                        <Button
+                            Style="{StaticResource CalendarStyle}"
+                            Click="OpenCalendarView_Click"/>
+
+                        <Button
+                            Style="{StaticResource TaskManagerStyle}"
+                            Click="OpenTaskManagerView_Click"/>
+
+                        <Button
+                            Style="{StaticResource AboutStyle}"
+                            Click="OpenAboutView_Click"/>
+
+                    </StackPanel>
+
+                </Border>
+
+                <!--// Main Content \\-->
+                <Border
+                    Grid.Column="1"
+                    BorderThickness="0,1,0,0"
+                    BorderBrush="{DynamicResource BorderBrushColor}">
+
+                    <ContentControl x:Name="MainContent"/>
+
+                </Border>
+
+            </Grid>
+
+        </Grid>
+
+    </Border>
+
+</Window>

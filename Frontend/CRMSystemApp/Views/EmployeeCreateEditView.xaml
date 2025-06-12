@@ -1,0 +1,171 @@
+﻿<UserControl x:Class="CRMSystemApp.Views.EmployeeCreateEditView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRMSystemApp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="710"
+             d:DesignWidth="500"
+             Background="Transparent"
+             BorderThickness="0"
+             SnapsToDevicePixels="True">
+
+    <!--// Employee Create & Edit View \\-->
+    <Border
+        Background="Transparent"
+        SnapsToDevicePixels="True">
+
+        <!--// Main Content Section \\-->
+        <Grid
+            Grid.Row="1"
+            Margin="0,50"
+            Background="Transparent"
+            SnapsToDevicePixels="True">
+
+            <!--// Input Data \\-->
+            <StackPanel
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+                <!--// FullName \\-->
+                <StackPanel
+                    Orientation="Vertical"
+                    Margin="0,5">
+
+                    <TextBlock
+                        Text="Full Name:"
+                        FontWeight="SemiBold"
+                        Opacity=".75"
+                        Style="{StaticResource InfoTextBlockStyle}"/>
+
+                    <TextBox x:Name="EmployeeCreateEditFullNameTextBox"
+                        Width="250"
+                        Margin="0,10,0,0"
+                        Foreground="{DynamicResource InputTextForegroundBrush}"
+                        Style="{StaticResource InputStyle}"/>
+
+                </StackPanel>
+
+                <!--// Birth Date \\-->
+                <StackPanel
+                    Orientation="Vertical"
+                    Margin="0,5">
+
+                    <TextBlock
+                        Text="Birth Date:"
+                        FontWeight="SemiBold"
+                        Opacity=".75"
+                        Style="{StaticResource InfoTextBlockStyle}"/>
+
+                    <DatePicker x:Name="EmployeeCreateEditBirthDateSelector"
+                        SelectedDate=""
+                        Width="250"
+                        Height="35"
+                        Margin="0,10,0,0"
+                        Style="{StaticResource BirthDateStyle}"/>
+
+                </StackPanel>
+
+                <!--// Email \\-->
+                <StackPanel
+                    Orientation="Vertical"
+                    Margin="0,5">
+
+                    <TextBlock
+                        Text="Email:"
+                        FontWeight="SemiBold"
+                        Opacity=".75"
+                        Style="{StaticResource InfoTextBlockStyle}"/>
+
+                    <TextBox x:Name="EmployeeCreateEditEmailTextBox"
+                        Width="250"
+                        Margin="0,10,0,0"
+                        Foreground="{DynamicResource InputTextForegroundBrush}"
+                        Style="{StaticResource InputStyle}"/>
+
+                </StackPanel>
+
+                <!--// Phone \\-->
+                <StackPanel
+                    Orientation="Vertical"
+                    Margin="0,5">
+
+                    <TextBlock
+                        Text="Phone:"
+                        FontWeight="SemiBold"
+                        Opacity=".75"
+                        Style="{StaticResource InfoTextBlockStyle}"/>
+
+                    <TextBox x:Name="EmployeeCreateEditPhoneTextBox"
+                        Width="250"
+                        Margin="0,10,0,0"
+                        Foreground="{DynamicResource InputTextForegroundBrush}"
+                        Style="{StaticResource InputStyle}"/>
+
+                </StackPanel>
+
+                <!--// Position \\-->
+                <StackPanel
+                    Orientation="Vertical"
+                    Margin="0,5">
+
+                    <TextBlock
+                        Text="Position:"
+                        FontWeight="SemiBold"
+                        Opacity=".75"
+                        Style="{StaticResource InfoTextBlockStyle}"/>
+
+                    <TextBox x:Name="EmployeeCreateEditPositionTextBox"
+                        Width="250"
+                        Margin="0,10,0,0"
+                        Foreground="{DynamicResource InputTextForegroundBrush}"
+                        Style="{StaticResource InputStyle}"/>
+
+                </StackPanel>
+
+                <!--// Salary \\-->
+                <StackPanel
+                    Orientation="Vertical"
+                    Margin="0,5">
+
+                    <TextBlock
+                        Text="Salary:"
+                        FontWeight="SemiBold"
+                        Opacity=".75"
+                        Style="{StaticResource InfoTextBlockStyle}"/>
+
+                    <TextBox x:Name="EmployeeCreateEditSalaryTextBox"
+                        Width="250"
+                        Margin="0,10,0,0"
+                        Foreground="{DynamicResource InputTextForegroundBrush}"
+                        Style="{StaticResource InputStyle}"/>
+
+                </StackPanel>
+
+                <!--// Functional Panel \\-->
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="0,10,5,0">
+
+                    <!--// Save Button \\-->
+                    <Button
+                        Margin="0,0,5,0"
+                        Style="{StaticResource SaveButtonStyle}"
+                        Click="Save_Click"/>
+
+                    <!--// Cancel Button \\-->
+                    <Button
+                        Style="{StaticResource CancelButtonStyle}"
+                        Click="Cancel_Click"/>
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </Grid>
+
+    </Border>
+
+</UserControl>

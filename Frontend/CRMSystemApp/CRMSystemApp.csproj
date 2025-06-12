@@ -1,11 +1,188 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net8.0-windows</TargetFramework>
-        <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <UseWPF>true</UseWPF>
-    </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Images\About_Black.png" />
+		<None Remove="Images\About_Green.png" />
+		<None Remove="Images\About_White.png" />
+		<None Remove="Images\Account.png" />
+		<None Remove="Images\Account_Black.png" />
+		<None Remove="Images\Account_Green.png" />
+		<None Remove="Images\Account_White.png" />
+		<None Remove="Images\Add_Black.png" />
+		<None Remove="Images\Add_Green.png" />
+		<None Remove="Images\Add_White.png" />
+		<None Remove="Images\Back_Black.png" />
+		<None Remove="Images\Back_Green.png" />
+		<None Remove="Images\Back_White.png" />
+		<None Remove="Images\Calendar_Black.png" />
+		<None Remove="Images\Calendar_Green.png" />
+		<None Remove="Images\Calendar_White.png" />
+		<None Remove="Images\Close_Black.png" />
+		<None Remove="Images\Close_Green.png" />
+		<None Remove="Images\Close_White.png" />
+		<None Remove="Images\Confirm_Black.png" />
+		<None Remove="Images\Confirm_Green.png" />
+		<None Remove="Images\Confirm_White.png" />
+		<None Remove="Images\Edit_Black.png" />
+		<None Remove="Images\Edit_Green.png" />
+		<None Remove="Images\Edit_White.png" />
+		<None Remove="Images\Email_Black.png" />
+		<None Remove="Images\Email_Green.png" />
+		<None Remove="Images\Email_White.png" />
+		<None Remove="Images\Export_Black.png" />
+		<None Remove="Images\Export_Green.png" />
+		<None Remove="Images\Export_White.png" />
+		<None Remove="Images\Home_Black.png" />
+		<None Remove="Images\Home_Green.png" />
+		<None Remove="Images\Home_White.png" />
+		<None Remove="Images\Import_Black.png" />
+		<None Remove="Images\Import_Green.png" />
+		<None Remove="Images\Import_White.png" />
+		<None Remove="Images\Logo_Green.png" />
+		<None Remove="Images\Minimize_Black.png" />
+		<None Remove="Images\Minimize_Green.png" />
+		<None Remove="Images\Minimize_White.png" />
+		<None Remove="Images\Moon.png" />
+		<None Remove="Images\Remove_Black.png" />
+		<None Remove="Images\Remove_Green.png" />
+		<None Remove="Images\Remove_White.png" />
+		<None Remove="Images\Reports.png" />
+		<None Remove="Images\Reports_Black.png" />
+		<None Remove="Images\Reports_Green.png" />
+		<None Remove="Images\Reports_White.png" />
+		<None Remove="Images\ResetPassword_Black.png" />
+		<None Remove="Images\ResetPassword_Green.png" />
+		<None Remove="Images\ResetPassword_White.png" />
+		<None Remove="Images\Salary_Black.png" />
+		<None Remove="Images\Salary_Green.png" />
+		<None Remove="Images\Salary_White.png" />
+		<None Remove="Images\Save_Black.png" />
+		<None Remove="Images\Save_Green.png" />
+		<None Remove="Images\Save_White.png" />
+		<None Remove="Images\Schedule_Black.png" />
+		<None Remove="Images\Schedule_EN.png" />
+		<None Remove="Images\Schedule_Green.png" />
+		<None Remove="Images\Schedule_White.png" />
+		<None Remove="Images\Send_Black.png" />
+		<None Remove="Images\Send_Green.png" />
+		<None Remove="Images\Send_White.png" />
+		<None Remove="Images\Settings_Black.png" />
+		<None Remove="Images\Settings_Green.png" />
+		<None Remove="Images\Settings_White.png" />
+		<None Remove="Images\Students_Black.png" />
+		<None Remove="Images\Students_Green.png" />
+		<None Remove="Images\Students_White.png" />
+		<None Remove="Images\Sun.png" />
+		<None Remove="Images\SwitchTheme_Green.png" />
+		<None Remove="Images\TaskManager_Black.png" />
+		<None Remove="Images\TaskManager_Green.png" />
+		<None Remove="Images\TaskManager_White.png" />
+		<None Remove="Images\Upload_Black.png" />
+		<None Remove="Images\Upload_Green.png" />
+		<None Remove="Images\Upload_White.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Images\Confirm_Black.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Images\About_Black.png" />
+		<Resource Include="Images\About_Green.png" />
+		<Resource Include="Images\About_White.png" />
+		<Resource Include="Images\Account_Black.png" />
+		<Resource Include="Images\Account_Green.png" />
+		<Resource Include="Images\Account_White.png" />
+		<Resource Include="Images\Add_Black.png" />
+		<Resource Include="Images\Add_Green.png" />
+		<Resource Include="Images\Add_White.png" />
+		<Resource Include="Images\Back_Black.png" />
+		<Resource Include="Images\Back_Green.png" />
+		<Resource Include="Images\Back_White.png" />
+		<Resource Include="Images\Calendar_Black.png" />
+		<Resource Include="Images\Calendar_Green.png" />
+		<Resource Include="Images\Calendar_White.png" />
+		<Resource Include="Images\Close_Black.png" />
+		<Resource Include="Images\Close_Green.png" />
+		<Resource Include="Images\Close_White.png" />
+		<Resource Include="Images\Confirm_Green.png" />
+		<Resource Include="Images\Confirm_White.png" />
+		<Resource Include="Images\Edit_Black.png" />
+		<Resource Include="Images\Edit_Green.png" />
+		<Resource Include="Images\Edit_White.png" />
+		<Resource Include="Images\Email_Black.png" />
+		<Resource Include="Images\Email_Green.png" />
+		<Resource Include="Images\Email_White.png" />
+		<Resource Include="Images\Employees_Black.png" />
+		<Resource Include="Images\Employees_Green.png" />
+		<Resource Include="Images\Employees_White.png" />
+		<Resource Include="Images\Export_Black.png" />
+		<Resource Include="Images\Export_Green.png" />
+		<Resource Include="Images\Export_White.png" />
+		<Resource Include="Images\Home_Black.png" />
+		<Resource Include="Images\Home_Green.png" />
+		<Resource Include="Images\Home_White.png" />
+		<Resource Include="Images\Import_Black.png" />
+		<Resource Include="Images\Import_Green.png" />
+		<Resource Include="Images\Import_White.png" />
+		<Resource Include="Images\Logo_Blue.png" />
+		<Resource Include="Images\Logo_Green.png" />
+		<Resource Include="Images\Minimize_Black.png" />
+		<Resource Include="Images\Minimize_Green.png" />
+		<Resource Include="Images\Minimize_White.png" />
+		<Resource Include="Images\Moon.png" />
+		<Resource Include="Images\Remove_Black.png" />
+		<Resource Include="Images\Remove_Green.png" />
+		<Resource Include="Images\Remove_White.png" />
+		<Resource Include="Images\Reports_Green.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Images\Reports_Black.png" />
+		<Resource Include="Images\Reports_White.png" />
+		<Resource Include="Images\ResetPassword_Black.png" />
+		<Resource Include="Images\ResetPassword_Green.png" />
+		<Resource Include="Images\ResetPassword_White.png" />
+		<Resource Include="Images\Salary_Black.png" />
+		<Resource Include="Images\Salary_Green.png" />
+		<Resource Include="Images\Salary_White.png" />
+		<Resource Include="Images\Save_Black.png" />
+		<Resource Include="Images\Save_Green.png" />
+		<Resource Include="Images\Save_White.png" />
+		<Resource Include="Images\Schedule_EN.png" />
+		<Resource Include="Images\Schedule_UA.png" />
+		<Resource Include="Images\Schedule_Black.png" />
+		<Resource Include="Images\Schedule_Green.png" />
+		<Resource Include="Images\Schedule_White.png" />
+		<Resource Include="Images\Send_Black.png" />
+		<Resource Include="Images\Send_Green.png" />
+		<Resource Include="Images\Send_White.png" />
+		<Resource Include="Images\Settings_Black.png" />
+		<Resource Include="Images\Settings_Green.png" />
+		<Resource Include="Images\Settings_White.png" />
+		<Resource Include="Images\Students_Black.png" />
+		<Resource Include="Images\Students_Green.png" />
+		<Resource Include="Images\Students_White.png" />
+		<Resource Include="Images\Sun.png" />
+		<Resource Include="Images\SwitchTheme_Green.png" />
+		<Resource Include="Images\TaskManager_Black.png" />
+		<Resource Include="Images\TaskManager_Green.png" />
+		<Resource Include="Images\TaskManager_White.png" />
+		<Resource Include="Images\Upload_Black.png" />
+		<Resource Include="Images\Upload_Green.png" />
+		<Resource Include="Images\Upload_White.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+	</ItemGroup>
 
 </Project>

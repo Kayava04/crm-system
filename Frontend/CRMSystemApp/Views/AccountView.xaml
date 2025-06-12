@@ -1,0 +1,208 @@
+﻿<UserControl x:Class="CRMSystemApp.Views.AccountView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRMSystemApp.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="710"
+             d:DesignWidth="500"
+             Background="Transparent"
+             BorderThickness="0"
+             SnapsToDevicePixels="True">
+
+    <!--// User Account View \\-->
+    <Grid
+        Background="Transparent"
+        SnapsToDevicePixels="True">
+
+        <!--// Main Content \\-->
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+
+            <!--// Profile Photo \\-->
+            <Grid
+                Width="120"
+                Height="120"
+                SnapsToDevicePixels="True">
+
+                <!--// Ellipse Background \\-->
+                <Ellipse
+                    Fill="{DynamicResource PhotoEllipseFillBrush}"
+                    Stroke="{DynamicResource PhotoEllipseStrokeBrush}"
+                    SnapsToDevicePixels="True"/>
+
+                <!--// Initials \\-->
+                <TextBlock x:Name="InitialsTextBlock"
+                    Text="BM"
+                    FontSize="36"
+                    FontWeight="Bold"
+                    Foreground="{DynamicResource PhotoTextBrush}"
+                    HorizontalAlignment="Center"
+                    Style="{StaticResource InfoTextBlockStyle}"/>
+
+                <!--// Profile Image \\-->
+                <Image x:Name="ProfileImage"
+                    Stretch="Fill"
+                    ClipToBounds="True"
+                    Visibility="Collapsed"
+                    Width="120" Height="120">
+
+                    <Image.Clip>
+                        <EllipseGeometry Center="60,60" RadiusX="60" RadiusY="60"/>
+                    </Image.Clip>
+
+                </Image>
+
+            </Grid>
+
+            <!--// Upload Profile Photo Button \\-->
+            <Button
+                Margin="0,10"
+                Style="{StaticResource UploadStyle}"
+                Click="UploadProfilePhoto_Click"/>
+
+            <!--// Username \\-->
+            <StackPanel
+                Orientation="Vertical"
+                Margin="0,5">
+
+                <TextBlock
+                    Text="Username:"
+                    FontWeight="SemiBold"
+                    Opacity=".75"
+                    Style="{StaticResource InfoTextBlockStyle}"/>
+
+                <TextBox x:Name="UsernameTextBox"
+                    IsReadOnly="True"
+                    Width="250"
+                    Margin="0,10,0,0"
+                    Foreground="{DynamicResource InputTextForegroundBrush}"
+                    Style="{StaticResource InputStyle}"/>
+
+            </StackPanel>
+
+            <!--// FullName \\-->
+            <StackPanel
+                Orientation="Vertical"
+                Margin="0,5">
+
+                <TextBlock
+                    Text="Full Name:"
+                    FontWeight="SemiBold"
+                    Opacity=".75"
+                    Style="{StaticResource InfoTextBlockStyle}"/>
+
+                <TextBox x:Name="FullNameTextBox"
+                    IsReadOnly="True"
+                    Width="250"
+                    Margin="0,10,0,0"
+                    Foreground="{DynamicResource InputTextForegroundBrush}"
+                    Style="{StaticResource InputStyle}"/>
+
+            </StackPanel>
+
+            <!--// Email \\-->
+            <StackPanel
+                Orientation="Vertical"
+                Margin="0,5">
+
+                <TextBlock
+                    Text="Email:"
+                    FontWeight="SemiBold"
+                    Opacity=".75"
+                    Style="{StaticResource InfoTextBlockStyle}"/>
+
+                <TextBox x:Name="EmailTextBox"
+                    IsReadOnly="True"
+                    Width="250"
+                    Margin="0,10,0,0"
+                    Foreground="{DynamicResource InputTextForegroundBrush}"
+                    Style="{StaticResource InputStyle}"/>
+
+            </StackPanel>
+
+            <!--// Phone Number \\-->
+            <!--<StackPanel
+                Orientation="Vertical"
+                Margin="0,5">
+
+                <TextBlock
+                    Text="Phone:"
+                    FontWeight="SemiBold"
+                    Opacity=".75"
+                    Style="{StaticResource InfoTextBlockStyle}"/>
+
+                <TextBox x:Name="PhoneNumberTextBox"
+                    IsReadOnly="True"
+                    Width="250"
+                    Margin="0,10,0,0"
+                    Foreground="{DynamicResource InputTextForegroundBrush}"
+                    Style="{StaticResource InputStyle}"/>
+
+            </StackPanel>-->
+
+            <!--// Birth Date \\-->
+            <StackPanel
+                Orientation="Vertical"
+                Margin="0,5">
+
+                <TextBlock
+                    Text="Birth Date:"
+                    FontWeight="SemiBold"
+                    Opacity=".75"
+                    Style="{StaticResource InfoTextBlockStyle}"/>
+
+                <Grid
+                    Margin="0,10,0,0"
+                    SnapsToDevicePixels="True">
+
+                    <DatePicker x:Name="BirthDateSelector"
+                        SelectedDate=""
+                        Width="250"
+                        Height="35"
+                        Style="{StaticResource BirthDateStyle}"/>
+
+                    <Rectangle x:Name="Blocker"
+                        Fill="Transparent"
+                        IsHitTestVisible="True"
+                        Visibility="Visible"/>
+
+                </Grid>
+
+            </StackPanel>
+
+            <!--// Action Buttons \\-->
+            <StackPanel
+                Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,5">
+
+                <Button
+                    Margin="0,0,5,0"
+                    Style="{StaticResource EditStyle}"
+                    Click="EditProfileInfo_Click"/>
+
+                <Button
+                    Margin="0,0,5,0"
+                    Style="{StaticResource ChangePasswordStyle}"
+                    Click="ChangePasswordButton_Click"/>
+
+                <Button x:Name="SaveChangesButton"
+                    Visibility="Collapsed"
+                    Style="{StaticResource SaveStyle}"
+                    Click="SaveProfileChanges_Click"/>
+
+            </StackPanel>
+
+            <!--// Logout Button \\-->
+            <Button
+                Style="{StaticResource LogoutStyle}"
+                Click="LogoutButton_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+
+</UserControl>

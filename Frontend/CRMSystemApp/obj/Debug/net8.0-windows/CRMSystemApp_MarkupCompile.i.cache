@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\Projects\C#\CRMSystem\Frontend\CRMSystemApp\App.xaml
-31556297244
+342021787590
 
-101200672124
-198-352714763
-MainWindow.xaml;StudentPage.xaml;Views\DashboardPage.xaml;
+52523885940
+200925048843
+Styles\ButtonStyles.xaml;Styles\ComboBoxStyles.xaml;Styles\DataGridStyles.xaml;Styles\DatePickerStyles.xaml;Styles\PasswordBoxStyles.xaml;Styles\ScrollViewerStyles.xaml;Styles\TextBlockStyles.xaml;Styles\TextBoxStyles.xaml;Styles\ToolTipStyles.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;Views\AboutView.xaml;Views\AccountView.xaml;Views\AccountWindow.xaml;Views\CalendarView.xaml;Views\ChangePasswordView.xaml;Views\CreateEditWindow.xaml;Views\DetailsCardWindow.xaml;Views\EmailDetailsCardView.xaml;Views\EmailView.xaml;Views\EmployeeCreateEditView.xaml;Views\EmployeeDetailsCardView.xaml;Views\EmployeesView.xaml;Views\HomeView.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\RegisterWindow.xaml;Views\ReportsView.xaml;Views\SalaryView.xaml;Views\ScheduleView.xaml;Views\StudentCreateEditView.xaml;Views\StudentDetailsCardView.xaml;Views\StudentsView.xaml;Views\TaskManagerView.xaml;
 
-True
+False
 

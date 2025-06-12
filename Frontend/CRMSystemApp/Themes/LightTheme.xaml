@@ -1,0 +1,105 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--// Main Window Colors \\-->
+    <Color x:Key="MainBackgroundColor">#D9E4D7</Color>
+    <Color x:Key="TopBarBackgroundColor">Transparent</Color>
+    <Color x:Key="FunctionalBarBackgroundColor">Transparent</Color>
+    <Color x:Key="MenuBackgroundColor">#043013</Color>
+    <Color x:Key="MenuBorderColor">#22783E</Color>
+
+    <!--// Account Window & Account View \\-->
+    <Color x:Key="AccountWindowBackgroundColor">#BCCFBE</Color>
+    <Color x:Key="AccountWindowBorderColor">#064D1E</Color>
+    <Color x:Key="PhotoEllipseFillColor">#D0D0D0</Color>
+    <Color x:Key="PhotoEllipseStrokeColor">#989898</Color>
+    <Color x:Key="PhotoTextColor">#3F3F3F</Color>
+    <Color x:Key="InputTextForegroundColor">#5A5A5A</Color>
+
+    <!--// Login Window \\-->
+    <Color x:Key="LoginWindowBackgroundColor">#BCCFBE</Color>
+    <Color x:Key="LoginWindowBorderColor">#064D1E</Color>
+
+    <!--// Button Colors \\-->
+    <Color x:Key="ButtonForegroundColor">#121517</Color>
+    <Color x:Key="ButtonHoverBackgroundColor">#9DA39E</Color>
+
+    <Color x:Key="CloseButtonHoverBackgroundColor">#A30006</Color>
+
+    <Color x:Key="PrimaryButtonBackgroundColor">#1B6132</Color>
+    <Color x:Key="PrimaryButtonHoverBackgroundColor">#22783E</Color>
+    <Color x:Key="PrimaryButtonBorderColor">#064D1E</Color>
+
+    <Color x:Key="SwitchToggleBackgroundColor">#B4B4B4</Color>
+    <Color x:Key="SwitchToggleBorderColor">#999999</Color>
+    <Color x:Key="SwitchToggleCheckedBackgroundColor">#3F3F3F</Color>
+
+    <Color x:Key="BackButtonBackgroundColor">#3F3F3F</Color>
+    <Color x:Key="BackButtonBorderColor">#232323</Color>
+    <Color x:Key="BackButtonHoverBackgroundColor">#7C7C7C</Color>
+
+    <Color x:Key="RemoveButtonBackgroundColor">#d32f2f</Color>
+    <Color x:Key="RemoveButtonBorderColor">#b71c1c</Color>
+    <Color x:Key="RemoveButtonHoverBackgroundColor">#f44336</Color>
+
+    <Color x:Key="RegisterLoginBackgroundColor">#3F3F3F</Color>
+    <Color x:Key="RegisterLoginBorderColor">#232323</Color>
+    <Color x:Key="RegisterLoginHoverBackgroundColor">#7C7C7C</Color>
+    <Color x:Key="RegisterLoginForegroundColor">#D9E4D7</Color>
+
+    <Color x:Key="LogoutBackgroundColor">#860004</Color>
+    <Color x:Key="LogoutBorderColor">#6A0004</Color>
+    <Color x:Key="LogoutHoverBackgroundColor">#A30006</Color>
+    <Color x:Key="LogoutForegroundColor">#D9E4D7</Color>
+
+    <!--// Main Window Brushes \\-->
+    <SolidColorBrush x:Key="MainBackgroundBrush" Color="{StaticResource MainBackgroundColor}"/>
+    <SolidColorBrush x:Key="TopBarBackgroundBrush" Color="{StaticResource TopBarBackgroundColor}"/>
+    <SolidColorBrush x:Key="FunctionalBarBackgroundBrush" Color="{StaticResource FunctionalBarBackgroundColor}"/>
+    <SolidColorBrush x:Key="MenuBackgroundBrush" Color="{StaticResource MenuBackgroundColor}"/>
+    <SolidColorBrush x:Key="BorderBrushColor" Color="{StaticResource MenuBorderColor}"/>
+
+    <!--// Account Window Brushes & Account View Brushes \\-->
+    <SolidColorBrush x:Key="AccountWindowBackgroundBrush" Color="{StaticResource AccountWindowBackgroundColor}"/>
+    <SolidColorBrush x:Key="AccountWindowBorderBrush" Color="{StaticResource AccountWindowBorderColor}"/>
+    <SolidColorBrush x:Key="PhotoEllipseFillBrush" Color="{StaticResource PhotoEllipseFillColor}"/>
+    <SolidColorBrush x:Key="PhotoEllipseStrokeBrush" Color="{StaticResource PhotoEllipseStrokeColor}"/>
+    <SolidColorBrush x:Key="PhotoTextBrush" Color="{StaticResource PhotoTextColor}"/>
+    <SolidColorBrush x:Key="InputTextForegroundBrush" Color="{StaticResource InputTextForegroundColor}"/>
+
+    <!--// Login Window \\-->
+    <SolidColorBrush x:Key="LoginWindowBackgroundBrush" Color="{StaticResource LoginWindowBackgroundColor}"/>
+    <SolidColorBrush x:Key="LoginWindowBorderBrush" Color="{StaticResource LoginWindowBorderColor}"/>
+
+    <!--// Button Brushes \\-->
+    <SolidColorBrush x:Key="ButtonForegroundBrush" Color="{StaticResource ButtonForegroundColor}" />
+    <SolidColorBrush x:Key="ButtonHoverBackgroundBrush" Color="{StaticResource ButtonHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="CloseButtonHoverBackgroundBrush" Color="{StaticResource CloseButtonHoverBackgroundColor}" />
+
+    <SolidColorBrush x:Key="PrimaryButtonBackgroundBrush" Color="{StaticResource PrimaryButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="PrimaryButtonHoverBackgroundBrush" Color="{StaticResource PrimaryButtonHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="PrimaryButtonBorderBrush" Color="{StaticResource PrimaryButtonBorderColor}" />
+
+    <SolidColorBrush x:Key="SwitchToggleBackgroundBrush" Color="{StaticResource SwitchToggleBackgroundColor}" />
+    <SolidColorBrush x:Key="SwitchToggleBorderBrush" Color="{StaticResource SwitchToggleBorderColor}" />
+    <SolidColorBrush x:Key="SwitchToggleCheckedBackgroundBrush" Color="{StaticResource SwitchToggleCheckedBackgroundColor}" />
+
+    <SolidColorBrush x:Key="BackButtonBackgroundBrush" Color="{StaticResource BackButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="BackButtonBorderBrush" Color="{StaticResource BackButtonBorderColor}" />
+    <SolidColorBrush x:Key="BackButtonHoverBackgroundBrush" Color="{StaticResource BackButtonHoverBackgroundColor}" />
+
+    <SolidColorBrush x:Key="RemoveButtonBackgroundBrush" Color="{StaticResource RemoveButtonBackgroundColor}" />
+    <SolidColorBrush x:Key="RemoveButtonBorderBrush" Color="{StaticResource RemoveButtonBorderColor}" />
+    <SolidColorBrush x:Key="RemoveButtonHoverBackgroundBrush" Color="{StaticResource RemoveButtonHoverBackgroundColor}" />
+
+    <SolidColorBrush x:Key="RegisterLoginBackgroundBrush" Color="{StaticResource RegisterLoginBackgroundColor}" />
+    <SolidColorBrush x:Key="RegisterLoginBorderBrush" Color="{StaticResource RegisterLoginBorderColor}" />
+    <SolidColorBrush x:Key="RegisterLoginHoverBackgroundBrush" Color="{StaticResource RegisterLoginHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="RegisterLoginForegroundBrush" Color="{StaticResource RegisterLoginForegroundColor}" />
+
+    <SolidColorBrush x:Key="LogoutBackgroundBrush" Color="{StaticResource LogoutBackgroundColor}" />
+    <SolidColorBrush x:Key="LogoutBorderBrush" Color="{StaticResource LogoutBorderColor}" />
+    <SolidColorBrush x:Key="LogoutHoverBackgroundBrush" Color="{StaticResource LogoutHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="LogoutForegroundBrush" Color="{StaticResource LogoutForegroundColor}" />
+
+</ResourceDictionary>

@@ -1,0 +1,221 @@
+﻿<UserControl x:Class="CRMSystemApp.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CRMSystemApp.Views"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             xmlns:local1="clr-namespace:CRMSystemApp.Custom"
+             xmlns:local2="clr-namespace:CRMSystemApp.DTOs"
+             mc:Ignorable="d" 
+             Height="auto"
+             Width="auto"
+             Background="Transparent"
+             BorderThickness="0"
+             SnapsToDevicePixels="True">
+
+    <UserControl.Resources>
+        <local1:HeightLimitConverter x:Key="HeightLimitConverter"/>
+    </UserControl.Resources>
+
+    <!--// Home View \\-->
+    <Grid
+        Margin="30"
+        Background="Transparent"
+        SnapsToDevicePixels="True">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--// Title Text \\-->
+        <StackPanel
+            Orientation="Vertical"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,15">
+
+            <TextBlock
+                Text="Dashboard"
+                FontSize="26"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                Style="{StaticResource InfoTextBlockStyle}"/>
+
+        </StackPanel>
+
+        <!--// Report Cards \\-->
+        <StackPanel
+            Grid.Row="1"
+            Orientation="Horizontal"
+            HorizontalAlignment="Center"
+            Margin="0,0,0,30">
+
+            <!--// Students Card \\-->
+            <Border Background="#22783E" CornerRadius="10" Padding="20" Margin="10" Width="200" Height="100">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Students" Foreground="{DynamicResource RegisterLoginForegroundBrush}" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="StudentCountText" Foreground="{DynamicResource RegisterLoginForegroundBrush}" FontSize="26" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <!--// Employees Card \\-->
+            <Border Background="#064D1E" CornerRadius="10" Padding="20" Margin="10" Width="200" Height="100">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Employees" Foreground="{DynamicResource RegisterLoginForegroundBrush}" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="EmployeeCountText" Foreground="{DynamicResource RegisterLoginForegroundBrush}" FontSize="26" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+            <!--// Net Profit Card \\-->
+            <Border Background="#47525E" CornerRadius="10" Padding="20" Margin="10" Width="200" Height="100">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Net Profit" Foreground="{DynamicResource RegisterLoginForegroundBrush}" FontSize="18" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="NetProfitText" Foreground="{DynamicResource RegisterLoginForegroundBrush}" FontSize="26" FontWeight="Bold" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+
+        <!--// Student Trend Diagram \\-->
+        <Border
+            Grid.Row="2"
+            Background="{DynamicResource InputTextForegroundBrush}"
+            CornerRadius="10"
+            Padding="20"
+            Margin="0,0,0,30">
+
+            <StackPanel>
+
+                <!--// Title \\-->
+                <TextBlock
+                    Text="Monthly Student Trend" 
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Margin="0,0,0,10"
+                    Foreground="{DynamicResource RegisterLoginForegroundBrush}"/>
+
+                <!--// Charts \\-->
+                <lvc:CartesianChart x:Name="StudentTrendChart"
+                    Series="{Binding StudentTrendSeries}"
+                    Height="200"
+                    LegendLocation="None"
+                    Background="Transparent"
+                    Foreground="{DynamicResource RegisterLoginForegroundBrush}">
+
+                    <lvc:CartesianChart.DataTooltip>
+
+                        <lvc:DefaultTooltip
+                            Foreground="{DynamicResource RegisterLoginBackgroundBrush}"
+                            FontSize="14"/>
+
+                    </lvc:CartesianChart.DataTooltip>
+
+                    <lvc:CartesianChart.AxisX>
+
+                        <lvc:Axis
+                            Labels="{Binding StudentTrendLabels}"
+                            Foreground="{DynamicResource RegisterLoginForegroundBrush}"
+                            FontSize="14"/>
+
+                    </lvc:CartesianChart.AxisX>
+
+                    <lvc:CartesianChart.AxisY>
+
+                        <lvc:Axis
+                            LabelFormatter="{Binding TrendFormatter}"
+                            Foreground="{DynamicResource RegisterLoginForegroundBrush}"
+                            FontSize="14"/>
+
+                    </lvc:CartesianChart.AxisY>
+
+                </lvc:CartesianChart>
+
+            </StackPanel>
+
+        </Border>
+
+        <!--// Events \\-->
+        <Border
+            Grid.Row="3"
+            Background="{DynamicResource InputTextForegroundBrush}"
+            CornerRadius="10"
+            Padding="20"
+            Margin="0,0,0,0"
+            SnapsToDevicePixels="True">
+
+            <StackPanel>
+
+                <!--// Title \\-->
+                <TextBlock
+                    Text="Upcoming Events"
+                    FontSize="20"
+                    FontWeight="Bold"
+                    Foreground="{DynamicResource RegisterLoginForegroundBrush}"
+                    Margin="0,0,0,20"/>
+
+                <!--// Scrollable List of Events \\-->
+                <ScrollViewer
+                    MaxHeight="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Grid}, Path=ActualHeight, Converter={StaticResource HeightLimitConverter}}"
+                    Style="{StaticResource ScrollViewerStyle}">
+
+                    <ItemsControl>
+
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+
+                                <Border
+                                    Background="{DynamicResource RegisterLoginBackgroundBrush}"
+                                    CornerRadius="8"
+                                    Padding="10"
+                                    Margin="0,0,0,10">
+
+                                    <StackPanel>
+
+                                        <TextBlock
+                                            Text="{Binding Title}" 
+                                            FontWeight="SemiBold"
+                                            Foreground="{DynamicResource RegisterLoginForegroundBrush}" 
+                                            FontSize="16"/>
+
+                                        <TextBlock
+                                            Text="{Binding Date}" 
+                                            Foreground="{DynamicResource RegisterLoginForegroundBrush}" 
+                                            FontSize="14"
+                                            Opacity="0.7"/>
+
+                                    </StackPanel>
+
+                                </Border>
+
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+
+                        <ItemsControl.Items>
+                            <local2:EventModel Title="• Event 1" Date="April 30, 2025"/>
+                            <local2:EventModel Title="• Event 2" Date="May 10, 2025"/>
+                            <local2:EventModel Title="• Event 3" Date="May 10, 2025"/>
+                            <local2:EventModel Title="• Event 4" Date="May 10, 2025"/>
+                            <local2:EventModel Title="• Event 5" Date="May 10, 2025"/>
+                        </ItemsControl.Items>
+
+                    </ItemsControl>
+
+                </ScrollViewer>
+
+            </StackPanel>
+
+        </Border>
+
+    </Grid>
+
+</UserControl>
